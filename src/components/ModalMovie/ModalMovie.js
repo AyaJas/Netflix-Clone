@@ -2,11 +2,11 @@ import Modal from 'react-bootstrap/Modal';
 import { Button } from 'react-bootstrap';
 
 
-function ModalMovie({ movieInfo, Add, handleAdd }) {
+function ModalMovie({ movieInfo, add, handleAdd }) {
 
 return (
     <>
-    <Modal show={Add} onHide={handleAdd} animation={false}>
+    <Modal show={add} onHide={handleAdd} animation={false}>
         <Modal.Header closeButton>
             <Modal.Title>Add It To Favorite</Modal.Title>
         </Modal.Header>
