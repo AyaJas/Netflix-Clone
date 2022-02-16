@@ -1,9 +1,15 @@
-
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import { Button, Card, Col } from 'react-bootstrap';
+import ModalMovie from '../ModalMovie/ModalMovie';
 
 
 function Movie(props) {
 
+
+    const [add, setAdd] = useState(false);
+    const [movieInfo, setMovieInfo] = useState({});
+    const handleAdd = () => setAdd(false);
 
     return (
 
@@ -20,13 +26,15 @@ function Movie(props) {
                         <div>
                             <Button variant='primary'
                                 onClick={() => {
-                                    props.movieInfo(props.ele)
-                                    props.Add(true)
+                                    setMovieInfo(props.ele)
+                                    setAdd(true)
                                 }}>Add to Favorite</Button>
                         </div>
                     </Card.Body>
                 </Card>
             </Col>
+
+                <ModalMovie movieInfo={movieInfo} add={add} handleAdd={handleAdd} />
 
         </>
     );
