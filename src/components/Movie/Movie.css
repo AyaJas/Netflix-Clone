@@ -1,0 +1,52 @@
+.div{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.errorMessage{
+    display: flex;
+    justify-content: center;
+}
+
+.div-card{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    height: 25rem;
+    width: 16rem;
+    color:rgb(2, 112, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+.div-container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.div-card-img{
+    height: 12rem;
+}
+.div-card-title{
+    height: 3rem;
+}
+.div-card-link{
+    height: 5rem;
+}
+
+.div-card-button{
+    margin: 10px 0;
+    height: 3rem;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
