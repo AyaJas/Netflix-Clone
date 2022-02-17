@@ -1,27 +1,24 @@
-import { useState, useEffect } from 'react';
-import axios from 'axios';
 import Movie from '../Movie/Movie';
+import { Button, Container, Card, Row, Col } from 'react-bootstrap';
 
 
-
-function MovieList({data}){
-   
-    // const [Add, setAdd] = useState(false);
-    // const [movieInfo, setMovieInfo] = useState({});
-    // const handleAdd = () => setAdd(false);
-
+function MovieList({ data }) {
 
     return (
         <>
-            {
-                data.length && data.map((ele ,idx) => (
-                    <Movie key = {idx} ele={ele} />
-                ))
-            }
-
+            <Container className='div-container'>
+                <Row md={3}>
+                    {
+                        data.length && data.map((ele, idx) => (
+                            <Movie key={idx} ele={ele} />
+                        ))
+                    }
+                </Row>
+            </Container>
             {
                 !data.length && <div><h2>No Such Results, Please try again later</h2></div>
             }
+
         </>
 
     );

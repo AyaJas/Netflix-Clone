@@ -10,10 +10,10 @@ const navbarMovie = () => {
         <div>
             <Navbar bg = "dark" varient = "dark">
                 <Container>
-                    <Navbar.Brand to = "/">Movies</Navbar.Brand>
+                    <Navbar.Brand to = "/" >Movies</Navbar.Brand>
                     <Nav className = "movie-auto">
                         <Link className ='link' to = "/"> Home </Link>
-                        <Link className ='link' to = "/favoriteMovies">Favorite List</Link>
+                        <Link className ='link' to = "/getMovies">Favorite List</Link>
                     </Nav>
                 </Container>
             </Navbar>
