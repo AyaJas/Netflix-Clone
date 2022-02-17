@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, Container, Card, Row, Col } from 'react-bootstrap';
+import { Button, Card, Col } from 'react-bootstrap';
 import ModalMovie from '../ModalMovie/ModalMovie';
 import './Movie.css';
 

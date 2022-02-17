@@ -1,5 +1,5 @@
 import Movie from '../Movie/Movie';
-import { Button, Container, Card, Row, Col } from 'react-bootstrap';
+import {Container, Row } from 'react-bootstrap';
 
 
 function MovieList({ data }) {
